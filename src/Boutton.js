@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Button } from 'reactstrap';
 
 export default class Boutton extends Component {
  state={counter:0};
@@ -11,9 +12,9 @@ export default class Boutton extends Component {
     render() {
     return (
       <div>
-        <Boutton onClick={this.handelClick}>
+        <Button onClick={this.handelClick}>
             {this.state.counter}
-        </Boutton>
+        </Button>
       </div>
     )
   }

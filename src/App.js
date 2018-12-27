@@ -3,7 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import NestedElement from './NestedElement';
 import Boutton from'./Boutton';
-
+import Stateful from './Stateful';
+import Stateexample from'./Stateexample'
+import Propsexamplone from'./Propsexamplone'
 class App extends Component {
   render() {
     return (
@@ -21,13 +23,41 @@ class App extends Component {
           >
             Learn React
           </a>
-          <NestedElement/>
-        <Boutton />
+           
         </header>
+        <NestedElement/>
+        <Boutton />
+        <Stateful/>
+        <Stateexample/>
+        <Propsexamplone/>
+      {/* <Content/> */}
+      {/* <Header/>    */}
       </div>
     );
   }
 }
+
+
+
+// class Header extends React.Component {
+//   render() {
+//      return (
+//         <div>
+//            <h1>Header</h1>
+//         </div>
+//      );
+//   }
+// }
+// class Content extends React.Component {
+//   render() {
+//      return (
+//         <div>
+//            <h2>Content</h2>
+//            <p>The content text!!!</p>
+//         </div>
+//      );
+//   }
+// }
  
 export default App;
 
